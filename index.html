@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Parth - Neurologist | Expert Care</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav class="container nav-container">
+            <a href="#" class="logo">Dr. Parth</a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#clinic" class="nav-link">Clinic</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#appointments" class="btn btn-primary">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container grid-2">
+                <div class="hero-content">
+                    <span
+                        style="color: var(--primary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Neurologist
+                        & Consultant</span>
+                    <h1 style="font-size: 3.5rem; color: var(--secondary-color); margin: 1rem 0; line-height: 1.2;">
+                        Expert Neurological Care You Can Trust</h1>
+                    <p style="font-size: 1.125rem; color: var(--text-light); margin-bottom: 2rem;">Providing
+                        comprehensive diagnosis and personalized treatment for complex neurological conditions.
+                        Dedicated to improving patient quality of life through advanced medical expertise.</p>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+                        <a href="#appointments" class="btn btn-primary">Book Appointment</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Clinic</a>
+                    </div>
+
+                    <div class="stats grid-3" style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                        <div>
+                            <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.25rem;">15+</h3>
+                            <p style="color: var(--text-light); font-size: 0.875rem;">Years Experience</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.25rem;">5k+</h3>
+                            <p style="color: var(--text-light); font-size: 0.875rem;">Patients Treated</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.25rem;">98%</h3>
+                            <p style="color: var(--text-light); font-size: 0.875rem;">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for Doctor's Image -->
+                    <div
+                        style="background-color: #f0f0f0; width: 100%; height: 500px; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img src="assets/images/doctor_portrait.png" alt="Dr. Parth"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="background-color: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">About Dr. Parth</h2>
+                <p
+                    style="font-size: 1.2rem; color: var(--text-light); line-height: 1.8; max-width: 800px; margin: 0 auto 3rem; text-align: center;">
+                    Dr. Parth is a board-certified neurologist with over 15 years of experience in diagnosing and
+                    treating complex neurological conditions. He treats every patient with compassion and dedication,
+                    ensuring the highest quality of care.
+                </p>
+
+                <div class="card" style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Education & Training</h3>
+                    <ul style="list-style-type: none; padding-left: 0; color: var(--text-main);">
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">•</span>
+                            <strong>MD in Neurology</strong> - Prestigious Medical University (2009)
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">•</span>
+                            <strong>Residency</strong> - City General Hospital, Department of Neurology
+                        </li>
+                        <li style="padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">•</span>
+                            <strong>Fellowship</strong> - Advanced Neurophysiology
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" style="background-color: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title">Areas of Specialization</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/icons/brain.png" alt=""
+                            style="width: 48px; height: 48px; margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Migraine Management</h3>
+                        <p style="color: var(--text-light);">Advanced diagnosis and treatment plans for chronic
+                            migraines and headaches.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/icons/epilepsy.png" alt=""
+                            style="width: 48px; height: 48px; margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Epilepsy Care</h3>
+                        <p style="color: var(--text-light);">Comprehensive seizure management and ongoing monitoring for
+                            epilepsy patients.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/icons/neuro.png" alt=""
+                            style="width: 48px; height: 48px; margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Movement Disorders</h3>
+                        <p style="color: var(--text-light);">Specialized care for Parkinson's disease, tremors, and
+                            other movement related conditions.</p>
+                    </div>
+                    <div class="card">
+                        <div
+                            style="width: 48px; height: 48px; margin-bottom: 1.5rem; background-color: rgba(42, 122, 130, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--primary-color); font-weight: bold; font-size: 1.5rem;">S</span>
+                        </div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Stroke Rehabilitation</h3>
+                        <p style="color: var(--text-light);">Post-stroke recovery plans tailored to regain lost
+                            functions and prevent recurrence.</p>
+                    </div>
+                    <div class="card">
+                        <div
+                            style="width: 48px; height: 48px; margin-bottom: 1.5rem; background-color: rgba(42, 122, 130, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--primary-color); font-weight: bold; font-size: 1.5rem;">N</span>
+                        </div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Neuropathy</h3>
+                        <p style="color: var(--text-light);">Diagnosis and pain management for peripheral neuropathy and
+                            nerve damage.</p>
+                    </div>
+                    <div class="card">
+                        <div
+                            style="width: 48px; height: 48px; margin-bottom: 1.5rem; background-color: rgba(42, 122, 130, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: var(--primary-color); font-weight: bold; font-size: 1.5rem;">M</span>
+                        </div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Memory Disorders</h3>
+                        <p style="color: var(--text-light);">Evaluation and compassionate care for Alzheimer's disease
+                            and other forms of dementia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinic Section (used 'contact' content partially, plus placeholder) -->
+        <section id="clinic" style="background-color: var(--bg-white);">
+            <div class="container">
+                <h2 class="section-title">The Clinic</h2>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--text-light); margin-bottom: 2rem; font-size: 1.1rem;">
+                            Our clinic is equipped with state-of-the-art diagnostic technology to ensure accurate and
+                            timely results. We provide a comfortable and welcoming environment for all our patients.
+                        </p>
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Advanced Diagnostics</h3>
+                            <ul style="list-style: none; color: var(--text-light); padding: 0;">
+                                <li style="margin-bottom: 0.5rem;">• EEG (Electroencephalogram)</li>
+                                <li style="margin-bottom: 0.5rem;">• EMG (Electromyography)</li>
+                                <li style="margin-bottom: 0.5rem;">• Nerve Conduction Studies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Placeholder for Clinic Image -->
+                        <div
+                            style="background-color: #f0f0f0; width: 100%; height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #999;">Clinic Interior Image</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="background-color: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--text-light); margin-bottom: 2rem;">
+                            Have questions or need to schedule a consultation? We are here to help. Reach out to us via
+                            phone, email, or visit our clinic.
+                        </p>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Clinic Address</h3>
+                            <p style="color: var(--text-light);">123 Medical Plaza, Suite 400<br>New York, NY 10001</p>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Phone & Email</h3>
+                            <p style="color: var(--text-light);">+1 (555) 123-4567</p>
+                            <p style="color: var(--text-light);">contact@drparth.com</p>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Office Hours</h3>
+                            <p style="color: var(--text-light);">Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: 10:00 AM - 2:00
+                                PM<br>Sun: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1.5rem;">Send a Message</h3>
+                        <form>
+                            <div style="margin-bottom: 1rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Name</label>
+                                <input type="text"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                    placeholder="Your Name">
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Email</label>
+                                <input type="email"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                    placeholder="Your Email">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Message</label>
+                                <textarea
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; min-height: 120px;"
+                                    placeholder="How can we help?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointments Section -->
+        <section id="appointments" style="background-color: var(--bg-white);">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title">Schedule Your Visit</h2>
+                    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+                        We are currently accepting new patients. Please fill out the form below to request an
+                        appointment, and our staff will contact you to confirm the time.
+                    </p>
+
+                    <div class="card">
+                        <form>
+                            <div class="grid-2" style="gap: 1rem; margin-bottom: 1rem; grid-template-columns: 1fr 1fr;">
+                                <div>
+                                    <label
+                                        style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">First
+                                        Name</label>
+                                    <input type="text"
+                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                        required>
+                                </div>
+                                <div>
+                                    <label
+                                        style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Last
+                                        Name</label>
+                                    <input type="text"
+                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 1rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Email
+                                    Address</label>
+                                <input type="email"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                    required>
+                            </div>
+
+                            <div style="margin-bottom: 1rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Phone
+                                    Number</label>
+                                <input type="tel"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                    required>
+                            </div>
+
+                            <div style="margin-bottom: 1rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Preferred
+                                    Date</label>
+                                <input type="date"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
+                                    required>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label
+                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Reason
+                                    for Visit</label>
+                                <select
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;">
+                                    <option>General Consultation</option>
+                                    <option>Follow-up</option>
+                                    <option>Migraine Treatment</option>
+                                    <option>Second Opinion</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Request
+                                Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="logo" style="color: white; margin-bottom: 1.5rem;">Dr. Parth</h3>
+                    <p style="color: #a0aec0; margin-bottom: 1.5rem;">Dedicated to providing world-class neurological
+                        care with a patient-centered approach.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Quick Links</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li><a href="#" style="color: #a0aec0; text-decoration: none;">Home</a></li>
+                        <li><a href="#about" style="color: #a0aec0; text-decoration: none;">About</a></li>
+                        <li><a href="#expertise" style="color: #a0aec0; text-decoration: none;">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1.5rem;">Contact</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: #a0aec0;">
+                        <li>+1 (555) 123-4567</li>
+                        <li>contact@drparth.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; color: #a0aec0;">
+                <p>&copy; 2024 Dr. Parth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile Navigation */
+    .mobile-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .mobile-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: var(--secondary-color);
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        /* Adjust based on navbar height */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--bg-white);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        transition: 0.3s ease;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        background: transparent;
+    }
+
+    /* Grid Stack */
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero .grid-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        /* Image on top logic if desired, or standard stack */
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

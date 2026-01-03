@@ -1,0 +1,44 @@
+/* Base styles: Reset, variables, typography */
+:root {
+    /* Color Palette */
+    --primary-color: #2A7A82;
+    /* Dark Teal */
+    --primary-dark: #1e5a60;
+    --secondary-color: #102A43;
+    /* Dark Navy for Footer */
+    --text-main: #333333;
+    /* Dark Slate Grey */
+    --text-light: #666666;
+    /* Medium Grey */
+    --text-white: #ffffff;
+    --bg-white: #ffffff;
+    --bg-light: #F1F5F9;
+    /* Very light blue/grey */
+    --border-color: #e2e8f0;
+
+    /* Fonts */
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Spacing */
+    --container-width: 1200px;
+    --section-padding: 5rem 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-main);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+        linear-gradient(#e5e7eb 1px, transparent 1px),
+        linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center top;
+}
