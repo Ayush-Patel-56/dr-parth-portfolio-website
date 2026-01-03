@@ -25,23 +25,40 @@
         transition: all 0.3s ease;
     }
 
-    .nav-links {
+    .nav-menu {
         position: fixed;
-        top: 70px;
-        /* Adjust based on navbar height */
+        top: 75px;
+        /* Adjusted for potentially taller header */
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 75px);
         background-color: var(--bg-white);
         flex-direction: column;
         align-items: center;
-        padding-top: 2rem;
-        transition: 0.3s ease;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         border-top: 1px solid var(--border-color);
+        margin-left: 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-links.active {
+    .nav-menu.active {
         left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 0 3rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
     }
 
     .nav-links li {
