@@ -171,3 +171,150 @@
     width: 14px;
     height: 14px;
 }
+
+/* Expertise Cards */
+/* Expertise Flip Cards */
+/* Expertise Flip Cards */
+/* Expertise Flip Cards */
+.expertise-card-container {
+    background-color: transparent;
+    height: 340px;
+    /* Taller for better look */
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.expertise-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-card-container:hover .expertise-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.expertise-card-front,
+.expertise-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* Subtle border */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Front Side Styling */
+.card-front-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.expertise-card-container:hover .card-front-img {
+    transform: scale(1.05);
+    /* Subtle zoom before flip */
+}
+
+.card-front-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    /* Larger padding */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.front-icon-box {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-front-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    width: 100%;
+}
+
+.hover-learn-more {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Back Side Styling */
+.expertise-card-back {
+    transform: rotateY(180deg);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Left align */
+    justify-content: flex-start;
+    /* Top align */
+    background: #fff;
+    text-align: left;
+    /* Left text */
+}
+
+.expertise-card-back .icon-box {
+    width: 48px;
+    height: 48px;
+    background: rgba(42, 122, 130, 0.08);
+    /* Lighter background */
+    border-radius: 12px;
+    /* Rounded square matches ref */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.expertise-card-back h3 {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.expertise-card-back p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    flex-grow: 0;
+}
