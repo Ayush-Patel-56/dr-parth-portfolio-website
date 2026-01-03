@@ -4,13 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile Menu Toggle
   const initMobileMenu = () => {
-    const navLinks = document.querySelector('.nav-links');
-    // We'll assume a toggle button will be added with class 'mobile-toggle'
+    const navMenu = document.querySelector('.nav-menu');
     const toggleBtn = document.querySelector('.mobile-toggle');
 
-    if (toggleBtn && navLinks) {
+    if (toggleBtn && navMenu) {
       toggleBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        navMenu.classList.toggle('active');
         toggleBtn.classList.toggle('active');
       });
     }
