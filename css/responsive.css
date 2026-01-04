@@ -67,9 +67,16 @@
 
     /* Grid Stack */
     .grid-2,
-    .grid-3 {
+    .grid-3,
+    .about-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .about-image-wrapper {
+        height: 350px;
+        order: -1;
+        /* Show image on top on mobile if desired, or keep standard flow */
     }
 
     .hero .grid-2 {
