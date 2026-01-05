@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
     <style>
@@ -1146,59 +1147,106 @@
         <!-- Contact Section -->
         <section id="contact" style="background-color: var(--bg-light);">
             <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="grid-2">
-                    <div>
-                        <p style="color: var(--text-light); margin-bottom: 2rem;">
-                            Have questions or need to schedule a consultation? We are here to help. Reach out to us via
-                            phone, email, or visit our clinic.
-                        </p>
+                <div class="section-header text-center">
+                    <span class="section-subtitle">GET IN TOUCH</span>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-description">Have questions or need to schedule an appointment? We're here to help
+                    </p>
+                </div>
 
-                        <div style="margin-bottom: 2rem;">
-                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Clinic Address</h3>
-                            <p style="color: var(--text-light);">123 Medical Plaza, Suite 400<br>New York, NY 10001</p>
+                <div class="grid-2 contact-grid">
+                    <!-- Left Column: Contact Cards -->
+                    <div class="contact-cards">
+                        <!-- Phone -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Phone</h3>
+                                <p>(415) 555-1234</p>
+                                <span class="contact-subtext">Mon-Fri, 9am-5pm</span>
+                            </div>
                         </div>
 
-                        <div style="margin-bottom: 2rem;">
-                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Phone & Email</h3>
-                            <p style="color: var(--text-light);">+1 (555) 123-4567</p>
-                            <p style="color: var(--text-light);">contact@drparth.com</p>
+                        <!-- Email -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Email</h3>
+                                <p>office@drmitchell.com</p>
+                                <span class="contact-subtext">We'll respond within 24 hours</span>
+                            </div>
                         </div>
 
-                        <div style="margin-bottom: 2rem;">
-                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Office Hours</h3>
-                            <p style="color: var(--text-light);">Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: 10:00 AM - 2:00
-                                PM<br>Sun: Closed</p>
+                        <!-- New Patients -->
+                        <div class="contact-card highlight-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <h3>New Patients</h3>
+                                <p class="small-text">Currently accepting new patients. Please call to verify insurance
+                                    coverage before booking.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <h3 style="color: var(--secondary-color); margin-bottom: 1.5rem;">Send a Message</h3>
-                        <form>
-                            <div style="margin-bottom: 1rem;">
-                                <label
-                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Name</label>
-                                <input type="text"
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
-                                    placeholder="Your Name">
+                    <!-- Right Column: Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="fullname">Full Name *</label>
+                                <input type="text" id="fullname" placeholder="John Doe" required>
                             </div>
-                            <div style="margin-bottom: 1rem;">
-                                <label
-                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Email</label>
-                                <input type="email"
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px;"
-                                    placeholder="Your Email">
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
                             </div>
-                            <div style="margin-bottom: 1.5rem;">
-                                <label
-                                    style="display: block; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 500;">Message</label>
-                                <textarea
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 6px; min-height: 120px;"
-                                    placeholder="How can we help?"></textarea>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="(123) 456-7890">
                             </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send
-                                Message</button>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" placeholder="How can we help you?" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">
+                                Send Message
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="margin-left: 8px; vertical-align: middle;">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
                         </form>
+                        <p class="form-disclaimer">This form is for general inquiries. For medical emergencies, please
+                            call 911.</p>
                     </div>
                 </div>
             </div>
