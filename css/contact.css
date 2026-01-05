@@ -1,0 +1,135 @@
+/* Redesigned Contact Section Styles */
+.contact-grid {
+    align-items: flex-start;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    /* Vertically align icon and text */
+    gap: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Match clinic cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-card {
+    background-color: #f8fdfe;
+    /* Very subtle blue tint */
+    border-color: rgba(69, 183, 208, 0.2);
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(69, 183, 208, 0.1);
+    /* Light secondary color */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.contact-info h3 {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.contact-info p {
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.contact-subtext {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.small-text {
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+    color: var(--text-light) !important;
+    line-height: 1.5;
+}
+
+.contact-form-container {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-main);
+    background-color: #fcfcfc;
+    transition: all 0.2s ease;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(69, 183, 208, 0.1);
+}
+
+.form-disclaimer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+}
