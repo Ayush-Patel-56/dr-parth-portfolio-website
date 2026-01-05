@@ -1138,3 +1138,113 @@
         font-size: 1.2rem;
     }
 }
+
+/* Clinic Information Section */
+.clinic-info-grid {
+    align-items: stretch;
+    /* Match height of columns */
+}
+
+.clinic-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.clinic-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.clinic-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(69, 183, 208, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.clinic-text h3 {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.clinic-text p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.hours-row:last-child {
+    margin-bottom: 0;
+}
+
+.map-container {
+    height: 100%;
+    min-height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e6f6f8;
+    /* Soft blue matching theme */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.map-content {
+    color: var(--secondary-color);
+}
+
+.map-icon {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.map-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-content p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        min-height: 300px;
+        order: -1;
+        /* Place map above/below as needed? Default is below in DOM flow */
+    }
+}
