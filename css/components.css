@@ -1274,7 +1274,7 @@
 }
 
 .doctor-quote-text::before {
-    content: '“';
+    content: 'Â“';
     font-size: 6rem;
     color: rgba(42, 122, 130, 0.1);
     position: absolute;
@@ -1346,6 +1346,36 @@
     }
 }
 
+/* Floating WhatsApp Button */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+.floating-whatsapp-btn svg {
+    width: 30px;
+    height: 30px;
+    stroke: white;
+    fill: white;
+}
 /* Contact Form Success Toast */
 .form-success-toast {
     position: fixed;
