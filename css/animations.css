@@ -9,3 +9,13 @@
         opacity: 1;
     }
 }
+/* Floating Animation for Hero Image */
+@keyframes float-image {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.animate-float {
+    animation: float-image 4s ease-in-out infinite;
+}
