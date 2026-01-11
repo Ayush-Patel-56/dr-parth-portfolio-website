@@ -716,45 +716,60 @@
                 </div>
             </div>
         </section>
-        <section id="certifications" style="background-color: #fff; padding-top: 0;">
+        <section id="certifications" style="background-color: #fff;">
             <div class="container">
-                <div class="certifications-card">
-                    <h3 class="cert-title">Board Certifications & Licenses</h3>
-                    <div class="grid-2 cert-grid">
-                        <!-- Left Column -->
-                        <div class="cert-column">
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <div class="cert-content">
-                                    <h4>American Board of Psychiatry and Neurology</h4>
-                                    <span>Board Certified in Neurology</span>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <div class="cert-content">
-                                    <h4>DEA Registration</h4>
-                                    <span>Authorized prescriber</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="section-header text-center">
+                    <span class="section-subtitle">CREDENTIALS</span>
+                    <h2 class="section-title">Board Certifications</h2>
+                    <p class="section-description">Recognized excellence in medical education and specialized
+                        neurosurgical training.</p>
+                </div>
 
-                        <!-- Right Column -->
-                        <div class="cert-column">
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <div class="cert-content">
-                                    <h4>State Medical License</h4>
-                                    <span>Active and in good standing</span>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-dot"></div>
-                                <div class="cert-content">
-                                    <h4>ACLS Certification</h4>
-                                    <span>Advanced Cardiac Life Support</span>
-                                </div>
-                            </div>
+                <div class="cert-grid">
+                    <!-- Certificate 1: MBBS -->
+                    <div class="cert-card">
+                        <div class="cert-image-wrapper">
+                            <img src="assets/images/cert-mbbs.jpg" alt="MBBS Certificate" class="cert-image">
+                        </div>
+                        <div class="cert-caption">
+                            <h3>Bachelor of Medicine</h3>
+                            <p>M.P. Shah Medical College</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: MS -->
+                    <div class="cert-card">
+                        <div class="cert-image-wrapper">
+                            <img src="assets/images/cert-ms.jpg" alt="MS General Surgery Certificate"
+                                class="cert-image">
+                        </div>
+                        <div class="cert-caption">
+                            <h3>Master of Surgery</h3>
+                            <p>General Surgery (Gold Medalist)</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: DrNB -->
+                    <div class="cert-card">
+                        <div class="cert-image-wrapper">
+                            <img src="assets/images/cert-nbems.jpg" alt="DrNB Neurosurgery Certificate"
+                                class="cert-image">
+                        </div>
+                        <div class="cert-caption">
+                            <h3>DrNB Neurosurgery</h3>
+                            <p>National Board of Examinations</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4: GMC -->
+                    <div class="cert-card">
+                        <div class="cert-image-wrapper">
+                            <img src="assets/images/cert-gmc.jpg" alt="Gujarat Medical Council Registration"
+                                class="cert-image">
+                        </div>
+                        <div class="cert-caption">
+                            <h3>Medical Registration</h3>
+                            <p>Gujarat Medical Council</p>
                         </div>
                     </div>
                 </div>
@@ -1373,6 +1388,15 @@
         </svg>
     </a>
 
+    <!-- Lightbox Modal -->
+    <div id="certLightbox" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img src="" alt="Certificate Full View" class="lightbox-image">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 

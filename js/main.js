@@ -149,40 +149,63 @@ document.addEventListener('DOMContentLoaded', () => {
           submitBtn.innerHTML = originalBtnContent;
           submitBtn.style.backgroundColor = '';
         }, 3000);
-
-        // Show Custom Toast
-        showToast(`Thank you, ${nameInput.value}! Redirecting to WhatsApp...`);
       }, 1500);
     });
-
-    // Toast Notification Logic
-    const showToast = (message) => {
-      // Remove existing toast if any
-      const existingToast = document.querySelector('.form-success-toast');
-      if (existingToast) existingToast.remove();
-
-      // Create new toast
-      const toast = document.createElement('div');
-      toast.className = 'form-success-toast';
-      toast.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span>${message}</span>
-        `;
-
-      document.body.appendChild(toast);
-
-      // Trigger animation
-      setTimeout(() => toast.classList.add('active'), 10);
-
-      // Remove after 4 seconds
-      setTimeout(() => {
-        toast.classList.remove('active');
-        setTimeout(() => toast.remove(), 400);
-      }, 4000);
-    };
   };
 
   initContactForm();
+
+
+  // Certificate Lightbox
+  const initLightbox = () => {
+    const lightbox = document.getElementById('certLightbox');
+    if (!lightbox) return;
+
+    const lightboxImg = lightbox.querySelector('.lightbox-image');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    const openLightbox = (imgSrc) => {
+      lightboxImg.src = imgSrc;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      setTimeout(() => {
+        lightboxImg.src = '';
+      }, 300); // Clear after transition
+      document.body.style.overflow = '';
+    };
+
+    // Card Click Events
+    certCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const img = card.querySelector('.cert-image');
+        if (img) {
+          openLightbox(img.src);
+        }
+      });
+    });
+
+    // Close Events
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+
+    // Close on click outside image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  };
+
+  initLightbox();
 });
