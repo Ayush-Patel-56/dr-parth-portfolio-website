@@ -208,4 +208,54 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   initLightbox();
+  initContactForm();
+
+  const initCertificateLightbox = () => {
+    const lightbox = document.getElementById('certLightbox');
+    if (!lightbox) return;
+
+    const imgEl = lightbox.querySelector('.cert-lightbox-image');
+    const closeBtn = lightbox.querySelector('.cert-lightbox-close');
+    const cards = document.querySelectorAll('.cert-gallery-card');
+
+    const open = (src) => {
+      if (!imgEl) return;
+      imgEl.src = src;
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const close = () => {
+      lightbox.classList.remove('active');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (imgEl) {
+        setTimeout(() => {
+          imgEl.src = '';
+        }, 250);
+      }
+    };
+
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const src = card.getAttribute('data-cert-src');
+        if (src) open(src);
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', close);
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) close();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        close();
+      }
+    });
+  };
+
+  initCertificateLightbox();
 });
