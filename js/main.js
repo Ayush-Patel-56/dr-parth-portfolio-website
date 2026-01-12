@@ -128,7 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
 
-        window.open(whatsappUrl, '_blank');
+        // Detect Mobile Device
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+          window.location.href = whatsappUrl;
+        } else {
+          window.open(whatsappUrl, '_blank');
+        }
       };
 
       // Mock Submission Delay (e.g., 1.5 seconds)
