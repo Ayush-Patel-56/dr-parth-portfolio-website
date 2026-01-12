@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // WhatsApp Integration Logic
       const sendToWhatsApp = () => {
-        const phoneNumber = "918238427405"; // Doctor's number
+        const phoneNumber = "918433759077"; // Doctor's number
 
         // Professional formatted message
         const text = `*New Inquiry from Website*` +
