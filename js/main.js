@@ -121,12 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const phoneNumber = "918433759077"; // Doctor's number
 
         // Professional formatted message
-        const text = `*New Inquiry from Website*` +
-          `%0A%0A*Name:* ${nameInput.value}` +
-          `%0A*Email:* ${emailInput.value}` +
-          `%0A%0A*Message:*%0A${messageInput.value}`;
+        const rawText = `*New Inquiry from Website*\n\n` +
+          `*Name:* ${nameInput.value}\n` +
+          `*Email:* ${emailInput.value}\n\n` +
+          `*Message:*\n${messageInput.value}`;
 
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+        const encodedText = encodeURIComponent(rawText);
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
         // Detect Mobile Device
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
