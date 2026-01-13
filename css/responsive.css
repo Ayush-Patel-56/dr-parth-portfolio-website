@@ -1,0 +1,160 @@
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile Navigation */
+    .mobile-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .mobile-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: var(--secondary-color);
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 75px;
+        /* Adjusted for potentially taller header */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 75px);
+        background-color: var(--bg-white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-top: 1px solid var(--border-color);
+        margin-left: 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 0 3rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        background: transparent;
+    }
+
+    /* Grid Stack */
+    .grid-2,
+    .grid-3,
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image-wrapper {
+        height: 350px;
+        order: -1;
+        /* Show image on top on mobile if desired, or keep standard flow */
+    }
+
+    .hero .grid-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        /* Image on top logic if desired, or standard stack */
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Extra Mobile Refinements */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+        line-height: 1.1;
+    }
+
+    .hero-image-wrapper {
+        height: 350px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image-wrapper img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-nav {
+        width: 36px;
+        height: 36px;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+
+    .doctor-quote-text {
+        font-size: 1.5rem;
+    }
+
+    .doctor-quote-text::before {
+        font-size: 4rem;
+        top: -2rem;
+    }
+
+    .floating-call-btn,
+    .floating-whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        right: 20px;
+    }
+
+    .floating-whatsapp-btn {
+        bottom: 85px;
+    }
+
+    .map-container {
+        min-height: 250px;
+    }
+}
