@@ -163,6 +163,15 @@
         font-size: 16px !important;
         /* Prevents zoom on iOS */
     }
+
+    /* About Section - Add padding to prevent flush left text */
+    .about-text {
+        padding: 0 0.5rem;
+    }
+
+    .about-content {
+        padding: 0 0.5rem;
+    }
 }
 
 /* Extra Small Mobile (phones in portrait) */
