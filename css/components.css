@@ -438,14 +438,14 @@
     }
 
     .timeline-header {
-        position: relative;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .timeline-year {
-        position: absolute;
-        top: 0;
-        right: 0;
+        position: static;
         font-size: 0.8rem;
+        margin-left: calc(48px + 1.5rem);
     }
 
     .timeline-content {

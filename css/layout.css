@@ -140,6 +140,14 @@ section {
     z-index: 1;
 }
 
+/* About Section Text */
+.about-text {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
 /* Footer Layout */
 .site-footer {
     background-color: #1a202c;
