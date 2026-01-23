@@ -1,11 +1,24 @@
 /* Responsive styles */
+
+/* Tablet adjustments */
 @media (max-width: 1024px) {
     .container {
         max-width: 90%;
     }
+
+    .grid-2,
+    .grid-3 {
+        gap: 3rem;
+    }
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
+
+    /* Typography adjustments */
+    .section-title {
+        font-size: 2rem;
+    }
 
     /* Mobile Navigation */
     .mobile-toggle {
@@ -28,7 +41,6 @@
     .nav-menu {
         position: fixed;
         top: 75px;
-        /* Adjusted for potentially taller header */
         left: -100%;
         width: 100%;
         height: calc(100vh - 75px);
@@ -41,6 +53,7 @@
         border-top: 1px solid var(--border-color);
         margin-left: 0;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -59,102 +72,150 @@
         flex-direction: column;
         width: 100%;
         justify-content: center;
+        gap: 1rem;
     }
 
-    .nav-links li {
-        background: transparent;
+    .nav-actions .btn {
+        width: 80%;
+        max-width: 300px;
     }
 
     /* Grid Stack */
     .grid-2,
-    .grid-3,
-    .about-grid {
+    .grid-3 {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-
-    .about-image-wrapper {
-        height: 350px;
-        order: -1;
-        /* Show image on top on mobile if desired, or keep standard flow */
     }
 
     .hero .grid-2 {
         display: flex;
         flex-direction: column-reverse;
-        /* Image on top logic if desired, or standard stack */
     }
 
-    .section-title {
-        font-size: 2rem;
+    /* Hero Section Mobile */
+    .hero-content h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
     }
 
+    .hero-content p {
+        font-size: 1rem !important;
+    }
+
+    .hero-description {
+        text-align: justify;
+    }
+
+    .hero-content .stats {
+        padding-top: 1.5rem;
+    }
+
+    /* Keep stats in one row on mobile */
+    .hero-content .stats.grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .hero-content .stats h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .hero-image div {
+        height: 350px !important;
+    }
+
+    /* About Section Mobile */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Button adjustments for mobile */
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-wide {
+        min-width: 160px;
+    }
+
+    /* Section padding reduction */
+    section {
+        padding: 3rem 1rem;
+    }
+
+    /* Footer */
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
+    }
+
+    /* Card adjustments */
+    .card {
+        padding: 1.5rem;
+    }
+
+    /* Form adjustments */
+    form input,
+    form textarea,
+    form select {
+        font-size: 16px !important;
+        /* Prevents zoom on iOS */
     }
 }
 
-/* Extra Mobile Refinements */
+/* Extra Small Mobile (phones in portrait) */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
     .section-title {
         font-size: 1.75rem;
     }
 
-    .section-header {
-        margin-bottom: 2rem;
+    .hero-content h1 {
+        font-size: 2rem !important;
     }
 
-    .hero-title {
-        font-size: 2.25rem;
-        line-height: 1.1;
+    .hero-content span {
+        font-size: 0.75rem !important;
     }
 
-    .hero-image-wrapper {
-        height: 350px;
-        margin-bottom: 2rem;
+    .hero-image div {
+        height: 300px !important;
     }
 
-    .hero-image-wrapper img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
+    .btn {
+        padding: 0.65rem 1rem;
+        font-size: 0.8rem;
     }
 
-    .slider-nav {
-        width: 36px;
-        height: 36px;
+    .btn-wide {
+        min-width: 140px;
     }
 
-    .prev-btn {
-        left: 10px;
+    /* Stats grid on very small screens */
+    .hero-content .stats {
+        gap: 1rem;
     }
 
-    .next-btn {
-        right: 10px;
+    .hero-content .stats h3 {
+        font-size: 1.25rem !important;
     }
 
-    .doctor-quote-text {
-        font-size: 1.5rem;
+    .hero-content .stats p {
+        font-size: 0.75rem !important;
     }
 
-    .doctor-quote-text::before {
-        font-size: 4rem;
-        top: -2rem;
+    /* Card spacing */
+    .card {
+        padding: 1.25rem;
     }
 
-    .floating-call-btn,
-    .floating-whatsapp-btn {
-        width: 50px;
-        height: 50px;
-        right: 20px;
-    }
-
-    .floating-whatsapp-btn {
-        bottom: 85px;
-    }
-
-    .map-container {
-        min-height: 250px;
+    /* Section padding */
+    section {
+        padding: 2.5rem 1rem;
     }
 }
