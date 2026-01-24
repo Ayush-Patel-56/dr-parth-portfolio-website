@@ -163,6 +163,35 @@
         font-size: 16px !important;
         /* Prevents zoom on iOS */
     }
+
+    /* About Section - Add padding to prevent flush left text */
+    /* Ensure header description and body text align perfectly */
+    .section-description {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-text {
+        text-align: justify;
+        padding: 0 1rem;
+    }
+
+    /* Change 'Hover' text to 'Tap' on mobile */
+    .hover-learn-more {
+        font-size: 0;
+        /* Hide original text */
+    }
+
+    .hover-learn-more::after {
+        content: "Tap to learn more";
+        font-size: 0.875rem;
+        visibility: visible;
+        display: block;
+    }
 }
 
 /* Extra Small Mobile (phones in portrait) */
@@ -180,43 +209,43 @@
     }
 }
 
-    .hero-content span {
-        font-size: 0.75rem !important;
-    }
+.hero-content span {
+    font-size: 0.75rem !important;
+}
 
-    .hero-image div {
-        height: 300px !important;
-    }
+.hero-image div {
+    height: 300px !important;
+}
 
-    .btn {
-        padding: 0.65rem 1rem;
-        font-size: 0.8rem;
-    }
+.btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.8rem;
+}
 
-    .btn-wide {
-        min-width: 140px;
-    }
+.btn-wide {
+    min-width: 140px;
+}
 
-    /* Stats grid on very small screens */
-    .hero-content .stats {
-        gap: 1rem;
-    }
+/* Stats grid on very small screens */
+.hero-content .stats {
+    gap: 1rem;
+}
 
-    .hero-content .stats h3 {
-        font-size: 1.25rem !important;
-    }
+.hero-content .stats h3 {
+    font-size: 1.25rem !important;
+}
 
-    .hero-content .stats p {
-        font-size: 0.75rem !important;
-    }
+.hero-content .stats p {
+    font-size: 0.75rem !important;
+}
 
-    /* Card spacing */
-    .card {
-        padding: 1.25rem;
-    }
+/* Card spacing */
+.card {
+    padding: 1.25rem;
+}
 
-    /* Section padding */
-    section {
-        padding: 2.5rem 1rem;
-    }
+/* Section padding */
+section {
+    padding: 2.5rem 1rem;
+}
 }
