@@ -163,6 +163,17 @@
         font-size: 16px !important;
         /* Prevents zoom on iOS */
     }
+
+    /* Fix text overflow on mobile */
+    .about-text {
+        text-align: left !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .about-content {
+        padding: 0 0.5rem;
+    }
 }
 
 /* Extra Small Mobile (phones in portrait) */
@@ -178,45 +189,44 @@
     .hero-content h1 {
         font-size: 2rem !important;
     }
-}
 
-.hero-content span {
-    font-size: 0.75rem !important;
-}
+    .hero-content span {
+        font-size: 0.75rem !important;
+    }
 
-.hero-image div {
-    height: 300px !important;
-}
+    .hero-image div {
+        height: 300px !important;
+    }
 
-.btn {
-    padding: 0.65rem 1rem;
-    font-size: 0.8rem;
-}
+    .btn {
+        padding: 0.65rem 1rem;
+        font-size: 0.8rem;
+    }
 
-.btn-wide {
-    min-width: 140px;
-}
+    .btn-wide {
+        min-width: 140px;
+    }
 
-/* Stats grid on very small screens */
-.hero-content .stats {
-    gap: 1rem;
-}
+    /* Stats grid on very small screens */
+    .hero-content .stats {
+        gap: 1rem;
+    }
 
-.hero-content .stats h3 {
-    font-size: 1.25rem !important;
-}
+    .hero-content .stats h3 {
+        font-size: 1.25rem !important;
+    }
 
-.hero-content .stats p {
-    font-size: 0.75rem !important;
-}
+    .hero-content .stats p {
+        font-size: 0.75rem !important;
+    }
 
-/* Card spacing */
-.card {
-    padding: 1.25rem;
-}
+    /* Card spacing */
+    .card {
+        padding: 1.25rem;
+    }
 
-/* Section padding */
-section {
-    padding: 2.5rem 1rem;
-}
+    /* Section padding */
+    section {
+        padding: 2.5rem 1rem;
+    }
 }
