@@ -1,6 +1,6 @@
 # Doctor Portfolio Website 🏥
 
-a professional, modern medical portfolio website developed as a **freelance project** for a doctor, based on a custom Figma design.
+A professional, modern medical portfolio website developed as a **freelance project** for a doctor, based on a custom Figma design.
 
 ## 🩺 About the Project
 This website represents the doctor's professional identity and medical services with a focus on:
